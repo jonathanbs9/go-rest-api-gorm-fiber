@@ -1,7 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"github.com/gofiber/fiber"
+)
 
 func main() {
-	fmt.Println("Hello world")
+	app := fiber.New()
+	app.Get("/")
 }
